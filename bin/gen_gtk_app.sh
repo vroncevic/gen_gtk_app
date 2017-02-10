@@ -251,6 +251,9 @@ function __gen_gtk_app() {
 		__info_debug_message "$MSG" "$FUNC" "$GEN_GTK_APP_TOOL"
 		__info_debug_message "$MSG" "$FUNC" "$GEN_GTK_APP_TOOL"
 		eval "chmod -R 755 ${PDIR}/"
+		MSG="Generated GTK App project ${PDIR}/"
+		GEN_GTK_APP_LOGGING[LOG_MSGE]=$MSG
+		__logging GEN_GTK_APP_LOGGING
 		__info_debug_message_end "Done" "$FUNC" "$GEN_GTK_APP_TOOL"
 		TREE=$(which tree)
 		__check_tool "${TREE}"
