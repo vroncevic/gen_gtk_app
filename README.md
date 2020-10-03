@@ -100,7 +100,7 @@ Code structure:
 [![Documentation Status](https://readthedocs.org/projects/gen_gtk_app/badge/?version=latest)](https://gen_gtk_app.readthedocs.io/projects/gen_gtk_app/en/latest/?badge=latest)
 
 More documentation and info at:
-* [https://apmodule.readthedocs.io/en/latest/](https://apmodule.readthedocs.io/en/latest/)
+* [https://gen_gtk_app.readthedocs.io/en/latest/](https://gen_gtk_app.readthedocs.io/en/latest/)
 * [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
 * [https://developer.gnome.org/gtk3](https://developer.gnome.org/gtk3/stable/gtk-getting-started.html)
 
