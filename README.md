@@ -1,17 +1,17 @@
-# Generate App GTK C Project.
+# Generate App GTK C Project
 
 **gen_gtk_app** is shell tool for generating GTK C project.
 
-Developed in [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) code: **100%**.
+Developed in **[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** code: **100%**.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
-[![GitHub issues open](https://img.shields.io/github/issues/vroncevic/gen_gtk_app.svg)](https://github.com/vroncevic/gen_gtk_app/issues)
- [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/gen_gtk_app.svg)](https://github.com/vroncevic/gen_gtk_app/graphs/contributors)
+[![GitHub issues open](https://img.shields.io/github/issues/vroncevic/gen_gtk_app.svg)](https://github.com/vroncevic/gen_gtk_app/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/gen_gtk_app.svg)](https://github.com/vroncevic/gen_gtk_app/graphs/contributors)
 
-<!-- START doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
 - [Installation](#installation)
@@ -19,12 +19,13 @@ other information that should be provided before the modules are installed.
 - [Dependencies](#dependencies)
 - [Shell tool structure](#shell-tool-structure)
 - [Docs](#docs)
-- [Copyright and Licence](#copyright-and-licence)
-<!-- END doctoc -->
+- [Copyright and licence](#copyright-and-licence)
 
-### INSTALLATION
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Navigate to release [page](https://github.com/vroncevic/gen_gtk_app/releases) download and extract release archive.
+### Installation
+
+Navigate to release **[page](https://github.com/vroncevic/gen_gtk_app/releases)** download and extract release archive.
 
 To install **gen_gtk_app** type the following:
 
@@ -40,7 +41,7 @@ cp -R ~/sh_tool/log/   /root/scripts/gen_gtk_app/ver.1.0/
 
 Or You can use docker to create image/container.
 
-### USAGE
+### Usage
 
 ```
 # Create symlink for shell tool
@@ -53,12 +54,12 @@ export PATH=${PATH}:/root/bin/
 gen_gtk_app SimpleTest
 ```
 
-### DEPENDENCIES
+### Dependencies
 
 **gen_gtk_app** requires next modules and libraries:
 * sh_util [https://github.com/vroncevic/sh_util](https://github.com/vroncevic/sh_util)
 
-### SHELL TOOL STRUCTURE
+### Shell tool structure
 
 **gen_gtk_app** is based on MOP.
 
@@ -90,7 +91,7 @@ Code structure:
     └── gen_gtk_app.log
 ```
 
-### DOCS
+### Docs
 
 [![Documentation Status](https://readthedocs.org/projects/gen_gtk_app/badge/?version=latest)](https://gen_gtk_app.readthedocs.io/projects/gen_gtk_app/en/latest/?badge=latest)
 
@@ -99,13 +100,13 @@ More documentation and info at:
 * [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
 * [https://developer.gnome.org/gtk3](https://developer.gnome.org/gtk3/stable/gtk-getting-started.html)
 
-### COPYRIGHT AND LICENCE
+### Copyright and licence
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Copyright (C) 2016 by [vroncevic.github.io/gen_gtk_app](https://vroncevic.github.io/gen_gtk_app)
 
-This tool is free software; you can redistribute it and/or modify
+**gen_gtk_app** is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
