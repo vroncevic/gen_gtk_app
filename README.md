@@ -29,9 +29,11 @@ other information that should be provided before the modules are installed.
 
 ### Installation
 
+![Debian Linux OS](https://raw.githubusercontent.com/vroncevic/gen_gtk_app/dev/docs/debtux.png)
+
 Navigate to release **[page](https://github.com/vroncevic/gen_gtk_app/releases)** download and extract release archive.
 
-To install **gen_gtk_app** type the following:
+To install **gen_gtk_app** type the following
 
 ```
 tar xvzf gen_gtk_app-x.y.tar.gz
@@ -41,7 +43,49 @@ cp -R ~/sh_tool/conf/  /root/scripts/gen_gtk_app/ver.x.y/
 cp -R ~/sh_tool/log/   /root/scripts/gen_gtk_app/ver.x.y/
 ```
 
-![alt tag](https://raw.githubusercontent.com/vroncevic/gen_gtk_app/dev/docs/setup_tree.png)
+Self generated setup script and execution
+```
+./gen_gtk_app_setup.sh
+
+[setup] installing App/Tool/Script gen_gtk_app
+	Sun 05 Dec 2021 05:10:57 PM CET
+[setup] copy App/Tool/Script structure
+[setup] remove github editor configuration files
+[setup] set App/Tool/Script permission
+[setup] create symbolic link of App/Tool/Script
+[setup] done
+
+/root/scripts/gen_gtk_app/ver.2.0/
+├── bin/
+│   ├── center.sh
+│   ├── display_logo.sh
+│   └── gen_gtk_app.sh
+├── conf/
+│   ├── gen_gtk_app.cfg
+│   ├── gen_gtk_app.logo
+│   ├── gen_gtk_app_util.cfg
+│   ├── project_set.cfg
+│   └── template/
+│       ├── authors.template
+│       ├── autogen.template
+│       ├── c_editorconfig.template
+│       ├── changelog.template
+│       ├── configure_ac.template
+│       ├── copying.template
+│       ├── c_source.template
+│       ├── h_header.template
+│       ├── main_source.template
+│       ├── makefile_am_root.template
+│       ├── makefile_am_src.template
+│       ├── news.template
+│       ├── readme.template
+│       └── ui.template
+└── log/
+    └── gen_gtk_app.log
+
+4 directories, 22 files
+lrwxrwxrwx 1 root root 52 Dec  5 17:10 /root/bin/gen_gtk_app -> /root/scripts/gen_gtk_app/ver.2.0/bin/gen_gtk_app.sh
+```
 
 Or You can use docker to create image/container.
 
@@ -57,7 +101,99 @@ ln -s /root/scripts/gen_gtk_app/ver.x.y/bin/gen_gtk_app.sh /root/bin/gen_gtk_app
 export PATH=${PATH}:/root/bin/
 
 # Generating GTK C project
-gen_gtk_app SimpleTest
+gen_gtk_app rcp
+
+gen_gtk_app ver.2.0
+Sun 05 Dec 2021 05:17:07 PM CET
+
+[check_root] Check permission for current session? [ok]
+[check_root] Done
+
+	                                                       
+	                          _   _                        
+	  __ _  ___ _ __     __ _| |_| | __   __ _ _ __  _ __  
+	 / _` |/ _ \ '_ \   / _` | __| |/ /  / _` | '_ \| '_ \ 
+	| (_| |  __/ | | | | (_| | |_|   <  | (_| | |_) | |_) |
+	 \__, |\___|_| |_|  \__, |\__|_|\_\  \__,_| .__/| .__/ 
+	 |___/              |___/                 |_|   |_|    
+	                                                       
+		Info   github.io/gen_gtk_app ver.2.0 
+		Issue  github.io/issue
+		Author vroncevic.github.io
+
+[gen_gtk_app] Loading basic and util configuration!
+100% [================================================]
+
+[load_conf] Loading App/Tool/Script configuration!
+[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.2.0/conf/gen_gtk_app.cfg] [ok]
+[check_cfg] Done
+
+[load_conf] Done
+
+[load_util_conf] Load module configuration!
+[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.2.0/conf/gen_gtk_app_util.cfg] [ok]
+[check_cfg] Done
+
+[load_util_conf] Done
+
+[load_util_conf] Load module configuration!
+[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.2.0/conf/project_set.cfg] [ok]
+[check_cfg] Done
+
+[load_util_conf] Done
+
+[gen_gtk_app] Generate project structure!
+[gen_gtk_app] Generating directory [/data/dev/bash/3_tools/gen_gtk_app/rcp/]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/autogen.sh]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/configure.ac]
+[gen_gtk_app] Generating directory [/data/dev/bash/3_tools/gen_gtk_app/rcp/po/]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/po/ChangeLog]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/po/LINGUAS]
+[gen_gtk_app] Generate file [/data/dev/bash/3_tools/gen_gtk_app/rcp/po/POTFILES.in]
+[gen_gtk_app] Generating directory [/data/dev/bash/3_tools/gen_gtk_app/rcp/src/]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/src/rcp.c]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/src/.editorconfig]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/src/rcp.h]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/src/rcp.ui]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/src/main.c]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/src/Makefile.am]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/Makefile.am]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/COPYING]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/AUTHORS]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/NEWS]
+[gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/README]
+[gen_gtk_app] Set permission!
+[gen_gtk_app] Set permission!
+[logging] Checking directory [/root/scripts/gen_gtk_app/ver.2.0/log/]? [ok]
+[logging] Write info log!
+[logging] Done
+
+[gen_gtk_app] Done
+
+[check_tool] Checking tool [/usr/bin/tree]? [ok]
+[check_tool] Done
+
+/data/dev/bash/3_tools/gen_gtk_app/rcp/
+├── AUTHORS
+├── autogen.sh
+├── ChangeLog
+├── configure.ac
+├── COPYING
+├── Makefile.am
+├── NEWS
+├── po
+│   ├── ChangeLog
+│   ├── LINGUAS
+│   └── POTFILES.in
+├── README
+└── src
+    ├── main.c
+    ├── Makefile.am
+    ├── rcp.c
+    ├── rcp.h
+    └── rcp.ui
+
+2 directories, 16 files
 ```
 
 ### Dependencies
@@ -69,13 +205,16 @@ gen_gtk_app SimpleTest
 
 **gen_gtk_app** is based on MOP.
 
-Code structure:
+Shell tool structure
 ```
 sh_tool/
 ├── bin/
+│   ├── center.sh
+│   ├── display_logo.sh
 │   └── gen_gtk_app.sh
 ├── conf/
 │   ├── gen_gtk_app.cfg
+│   ├── gen_gtk_app.logo
 │   ├── gen_gtk_app_util.cfg
 │   ├── project_set.cfg
 │   └── template/
@@ -101,7 +240,7 @@ sh_tool/
 
 [![Documentation Status](https://readthedocs.org/projects/gen_gtk_app/badge/?version=latest)](https://gen_gtk_app.readthedocs.io/projects/gen_gtk_app/en/latest/?badge=latest)
 
-More documentation and info at:
+More documentation and info at
 * [https://gen_gtk_app.readthedocs.io/en/latest/](https://gen_gtk_app.readthedocs.io/en/latest/)
 * [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
 * [https://developer.gnome.org/gtk3](https://developer.gnome.org/gtk3/stable/gtk-getting-started.html)
