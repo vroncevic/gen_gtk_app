@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_gtk_app/dev/docs/gen_gtk_app_logo.png" width="25%">
-
 # Generate App GTK C Project
+
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_gtk_app/dev/docs/gen_gtk_app_logo.png" width="25%">
 
 **gen_gtk_app** is shell tool for generating GTK C project.
 
@@ -35,7 +35,7 @@ Navigate to release **[page](https://github.com/vroncevic/gen_gtk_app/releases)*
 
 To install **gen_gtk_app** type the following
 
-```
+```bash
 tar xvzf gen_gtk_app-x.y.tar.gz
 cd gen_gtk_app-x.y
 cp -R ~/sh_tool/bin/   /root/scripts/gen_gtk_app/ver.x.y/
@@ -44,7 +44,8 @@ cp -R ~/sh_tool/log/   /root/scripts/gen_gtk_app/ver.x.y/
 ```
 
 Self generated setup script and execution
-```
+
+```bash
 ./gen_gtk_app_setup.sh
 
 [setup] installing App/Tool/Script gen_gtk_app
@@ -91,7 +92,7 @@ Or You can use docker to create image/container.
 
 ### Usage
 
-```
+```bash
 # Create symlink for shell tool
 ln -s /root/scripts/gen_gtk_app/ver.x.y/bin/gen_gtk_app.sh /root/bin/gen_gtk_app
 
@@ -206,7 +207,8 @@ Sun 05 Dec 2021 05:17:07 PM CET
 **gen_gtk_app** is based on MOP.
 
 Shell tool structure
-```
+
+```bash
 sh_tool/
 ├── bin/
 │   ├── center.sh
