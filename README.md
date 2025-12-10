@@ -36,11 +36,11 @@ Navigate to release **[page](https://github.com/vroncevic/gen_gtk_app/releases)*
 To install **gen_gtk_app** type the following
 
 ```bash
-tar xvzf gen_gtk_app-3.0.tar.gz
-cd gen_gtk_app-3.0
-cp -R ~/sh_tool/bin/   /root/scripts/gen_gtk_app/ver.3.0/
-cp -R ~/sh_tool/conf/  /root/scripts/gen_gtk_app/ver.3.0/
-cp -R ~/sh_tool/log/   /root/scripts/gen_gtk_app/ver.3.0/
+tar xvzf gen_gtk_app-4.0.tar.gz
+cd gen_gtk_app-4.0
+cp -R ~/sh_tool/bin/   /root/scripts/gen_gtk_app/ver.4.0/
+cp -R ~/sh_tool/conf/  /root/scripts/gen_gtk_app/ver.4.0/
+cp -R ~/sh_tool/log/   /root/scripts/gen_gtk_app/ver.4.0/
 ```
 
 Self generated setup script and execution
@@ -56,7 +56,7 @@ Self generated setup script and execution
 [setup] create symbolic link of App/Tool/Script
 [setup] done
 
-/root/scripts/gen_gtk_app/ver.3.0/
+/root/scripts/gen_gtk_app/ver.4.0/
 ├── bin/
 │   └── gen_gtk_app.sh
 ├── conf/
@@ -83,7 +83,7 @@ Self generated setup script and execution
     └── gen_gtk_app.log
 
 4 directories, 22 files
-lrwxrwxrwx 1 root root 52 Dec  4 06:24 /root/bin/gen_gtk_app -> /root/scripts/gen_gtk_app/ver.3.0/bin/gen_gtk_app.sh
+lrwxrwxrwx 1 root root 52 Dec  4 06:24 /root/bin/gen_gtk_app -> /root/scripts/gen_gtk_app/ver.4.0/bin/gen_gtk_app.sh
 ```
 
 Or You can use docker to create image/container.
@@ -92,7 +92,7 @@ Or You can use docker to create image/container.
 
 ```bash
 # Create symlink for shell tool
-ln -s /root/scripts/gen_gtk_app/ver.3.0/bin/gen_gtk_app.sh /root/bin/gen_gtk_app
+ln -s /root/scripts/gen_gtk_app/ver.4.0/bin/gen_gtk_app.sh /root/bin/gen_gtk_app
 
 # Setting PATH
 export PATH=${PATH}:/root/bin/
@@ -100,7 +100,7 @@ export PATH=${PATH}:/root/bin/
 # Generating GTK C project
 gen_gtk_app rcp
 
-gen_gtk_app ver.3.0
+gen_gtk_app ver.4.0
 Thu Dec  4 06:25:42 AM CET 2025
 
 [check_root] Check permission for current session? [ok]
@@ -116,7 +116,7 @@ Thu Dec  4 06:25:42 AM CET 2025
    ░░░░░██░░██████ ███  ░██ █████ ░░░░░██  ░░██ ░██░░██ █████░░████████░██░░░  ░██░░░    
     █████  ░░░░░░ ░░░   ░░ ░░░░░   █████    ░░  ░░  ░░ ░░░░░  ░░░░░░░░ ░██     ░██       
    ░░░░░                          ░░░░░                                ░░      ░░         
-		Info   github.io/gen_gtk_app ver.3.0 
+		Info   github.io/gen_gtk_app ver.4.0 
 		Issue  github.io/issue
 		Author vroncevic.github.io
 
@@ -124,19 +124,19 @@ Thu Dec  4 06:25:42 AM CET 2025
 100% [================================================]
 
 [load_conf] Loading App/Tool/Script configuration!
-[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.3.0/conf/gen_gtk_app.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.4.0/conf/gen_gtk_app.cfg] [ok]
 [check_cfg] Done
 
 [load_conf] Done
 
 [load_util_conf] Load module configuration!
-[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.3.0/conf/gen_gtk_app_util.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.4.0/conf/gen_gtk_app_util.cfg] [ok]
 [check_cfg] Done
 
 [load_util_conf] Done
 
 [load_util_conf] Load module configuration!
-[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.3.0/conf/project_set.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/gen_gtk_app/ver.4.0/conf/project_set.cfg] [ok]
 [check_cfg] Done
 
 [load_util_conf] Done
@@ -163,7 +163,7 @@ Thu Dec  4 06:25:42 AM CET 2025
 [gen_gtk_app] Generating file [/data/dev/bash/3_tools/gen_gtk_app/rcp/README]
 [gen_gtk_app] Set permission!
 [gen_gtk_app] Set permission!
-[logging] Checking directory [/root/scripts/gen_gtk_app/ver.3.0/log/]? [ok]
+[logging] Checking directory [/root/scripts/gen_gtk_app/ver.4.0/log/]? [ok]
 [logging] Write info log!
 [logging] Done
 
@@ -245,7 +245,7 @@ More documentation and info at
 
 ### Copyright and licence
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-4.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Copyright (C) 2017 - 2026 by [vroncevic.github.io/gen_gtk_app](https://vroncevic.github.io/gen_gtk_app)
 
